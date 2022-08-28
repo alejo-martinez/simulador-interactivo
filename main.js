@@ -79,7 +79,7 @@ const calculoDeTierra = () => {
 //Función que determina el agua a utilizar por macetas.
 const aguaTotalMaceta = (n1, n2) => {
     tierraTotal = n1 * n2;
-    totalAgua = tierraTotal * 0.1;
+    totalAgua = tierraTotal * 0.17;
     let regar = totalAgua / macetas;
     regar = regar.toFixed(2);
     
@@ -107,6 +107,8 @@ const aguaTotalSuelo = () => {
     }
     return aguaParaSuelo;
 }
+
+// Funcionamiento del script
 
 bienvenida();
 eleccion();
