@@ -75,6 +75,12 @@ const calculoDeTierra = () => {
 }
 }
 
+const tipoMaceta = () => {
+    let macetaTipo = prompt("¿Tus macetas tienen el mismo tamaño?")
+    return macetaTipo;
+}
+
+
 
 //Función que determina el agua a utilizar por macetas.
 const aguaTotalMaceta = (n1, n2) => {
@@ -82,6 +88,7 @@ const aguaTotalMaceta = (n1, n2) => {
     totalAgua = tierraTotal * 0.17;
     let regar = totalAgua / macetas;
     regar = regar.toFixed(2);
+    totalAgua = totalAgua.toFixed(2);
     
     if (metrosCuadrados == false && claseDeRiego == "1") {
         alert("Necesitarás " + totalAgua + " litros de agua para regar todas tus macetas. A cada maceta deberás echarle " + regar + " litros de agua cada 2 días.")
