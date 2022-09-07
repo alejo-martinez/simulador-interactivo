@@ -235,15 +235,10 @@ const cuantasParcelas = () => {
             return cantidadDeParcelas;
         }
     }
-    unaSolaParcela();
+   
 }
 
-const unaSolaParcela = () => {
-    if (metrosCuadrados == true && cantidadDeParcelas == 1) {
-        suelo = parseFloat(prompt("Ingresá los m² del terreno a calcular."))
-        alert("Para el terreno de " + suelo + "m² vas a necesitar " + suelo*15 + " litros de agua.")   
-    }
-}
+
 // Ingreso de los tamaños de los metros cuadrados a calcular.
 
 const calculoDeTierra = () => {
