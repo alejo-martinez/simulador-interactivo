@@ -5,14 +5,16 @@ let alertaCantidad = "Tenés que ingresar una cantidad(número)"
 let claseDeRiego = "0"; 
 let litrosDeTierra = 0; 
 let tierraTotal = 0; 
-
+let cantidadDeParcelas = 0
 let suelo = 0; 
 
 let cantidadFinalDeAgua = 0;
 let capacidadFinal = 0;
 let aguaFinal = 0;
 
+// Arrays vacíos para almacenar datos provistos por el usuario.
 const eleccionDeMacetas = [];
+const parcelas = [];
 
 // Clase constructora de las macetas
 class Maceta {
@@ -21,21 +23,6 @@ class Maceta {
         this.cantidad = cantidad;
     }
 }
-
-const maceta05 = new Maceta(0.5);
-const maceta07 = new Maceta(0.7);
-const maceta1 = new Maceta(1);
-const maceta015 = new Maceta(1.5);
-const maceta2 = new Maceta(2);
-const maceta25 = new Maceta(2.5);
-const maceta3 = new Maceta(3);
-const maceta4 = new Maceta(4);
-const maceta5 = new Maceta(5);
-const maceta10 = new Maceta(10);
-const maceta15  = new Maceta(15);
-const maceta20  = new Maceta(20);
-const maceta40  = new Maceta(40);
-
 
 
 const bienvenida = () => {
@@ -215,11 +202,10 @@ const sumaDeAgua = () => {
 
 const muestraDeAguaFinal = () => {
     if (metrosCuadrados == false) {
-        
         eleccionDeMacetas.forEach((maceta) => {
             capacidadFinal = maceta.capacidad * 0.15;
             capacidadFinal = capacidadFinal.toFixed(2)
-            alert("Para las macetas de " + maceta.capacidad + " litros, las vas a regar con " + capacidadFinal + " litros")
+            alert("Para las macetas de " + maceta.capacidad + " litros de tierra, las vas a regar con " + capacidadFinal + " litros de agua.")
         });
     }
 }
@@ -227,10 +213,9 @@ const muestraDeAguaFinal = () => {
 
 const muestraDeAgua = () => {
     if (metrosCuadrados == false) {
-        
         cantidadFinalDeAgua = tierraTotal * 0.15;
         cantidadFinalDeAgua = cantidadFinalDeAgua.toFixed(2);
-        alert("La cantidad de agua que vas a necesitar va a ser de " + cantidadFinalDeAgua + " litros de agua.")
+        alert("La cantidad de agua que vas a necesitar para regar todas las macetas va a ser de " + cantidadFinalDeAgua + " litros de agua.")
     }
 }
 
@@ -238,27 +223,55 @@ const muestraDeAgua = () => {
 
 //Función de ingreso de los metros cuadrados.
 
-const calculoDeTierra = () => {
+
+
+const cuantasParcelas = () => {
     if (metrosCuadrados == true) {
-        suelo = parseFloat(prompt("¿Cuántos metros cuadrados querés calcular?"))
-        if (isNaN(suelo)) {
-            alert("Tenés que ingresar un número")
-            calculoDeTierra();
+        cantidadDeParcelas = parseFloat(prompt("¿Cuántos m² distintos querés calcular?"))
+        if (isNaN(cantidadDeParcelas)) {
+            alert("Ingresá un número porfavor.")
+            cuantasParcelas();
+        } else {
+            return cantidadDeParcelas;
         }
-        return suelo;
+    }
+    unaSolaParcela();
+}
+
+const unaSolaParcela = () => {
+    if (metrosCuadrados == true && cantidadDeParcelas == 1) {
+        suelo = parseFloat(prompt("Ingresá los m² del terreno a calcular."))
+        alert("Para el terreno de " + suelo + "m² vas a necesitar " + suelo*15 + " litros de agua.")   
     }
 }
+// Ingreso de los tamaños de los metros cuadrados a calcular.
+
+const calculoDeTierra = () => {
+    if (metrosCuadrados == true) {
+        let contador = 1
+        while (parcelas.length != cantidadDeParcelas) {            
+            suelo = parseFloat(prompt("¿Cuántos m² tiene el terreno " +  contador +"?"))
+            contador += 1;
+            if (isNaN(suelo)) {
+                alert("Tenés que ingresar un número")
+                calculoDeTierra();
+            } else {
+                parcelas.push(suelo);
+            }
+        }
+        muestraDeAguaSuelo();
+    }
+}
+
 
 
 // Función que determina la cantidad de agua por metro cuadrado.
-const aguaTotalSuelo = () => {
-    let aguaParaSuelo = suelo * 15;
-
-    if (metrosCuadrados == true) {
-        alert("Para los " + suelo + " metros cuadrados necesitarás " + aguaParaSuelo + " litros de agua.")
+const muestraDeAguaSuelo = () => {
+    for (let terreno of parcelas) {
+        alert("Para los " + terreno + "m² vas a necesitar " + terreno*15 + " litros de agua.")    
     }
-    return aguaParaSuelo;
 }
+
 
 // Funcionamiento del script
 
@@ -268,5 +281,5 @@ macetasCalcular();
 pusheadoMacetas();
 sumaDeAgua();
 muestraDeAguaFinal();
+cuantasParcelas();
 calculoDeTierra();
-aguaTotalSuelo();
