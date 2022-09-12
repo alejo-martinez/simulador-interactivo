@@ -55,7 +55,6 @@ const mostrarTitulo = () => {
         terminacionTitulo.innerText = "macetas"
         h2.append(terminacionTitulo);
     }
-    // document.h2.append(terminacionTitulo);
     
 }
 
@@ -250,14 +249,6 @@ const muestraDelResultado = () => {
 
 
 
-// const muestraPorMaceta = () => {
-//     let ul = document.createElement("ul")
-//     let contenedorRespuesta = document.createElement("li")
-//     contenedorRespuesta.innerText = `Para las macetas de  litros de tierra, las vas a regar con ${capacidadFinal} litros de agua.`;
-//     ul.append(contenedorRespuesta);
-//     document.body.append(ul)
-// }
-
 // Ingreso de los tamaños de los metros cuadrados a calcular.
 
 const cuantasParcelas = () => {
@@ -300,10 +291,6 @@ const muestraDeAguaSuelo = () => {
     }
 }
 
-
-// DOM
-
-// USAR INNERHTML, CREATE  ELEMENT Y APPEND CHILD
 
 
 // Funcionamiento del script
