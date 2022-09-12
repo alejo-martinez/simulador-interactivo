@@ -1,4 +1,5 @@
 // VARIABLES PARA ALMACENAR DATOS
+const body = document.getElementsByTagName("body")
 
 let metrosCuadrados = false;
 let alertaCantidad = "Tenés que ingresar una cantidad(número)"
@@ -25,9 +26,9 @@ class Maceta {
 }
 
 
-const bienvenida = () => {
-    alert("¡Bienvenido! Aquí podras calcular cuánta agua utilizar para tus riegos, sin que te falte ni que te sobre.")
-}
+// const bienvenida = () => {
+//     alert("¡Bienvenido! Aquí podras calcular cuánta agua utilizar para tus riegos, sin que te falte ni que te sobre.")
+// }
 
 // Función elección de las macetas o suelo.
 
@@ -41,6 +42,21 @@ const eleccion = () => {
         alert("Debes seleccionar una opción.");
         eleccion();
     }
+}
+
+const mostrarTitulo = () => {
+    const h2 = document.getElementById("h2")
+    if (metrosCuadrados == true) {
+        const terminacionTitulo = document.createElement("strong")
+        terminacionTitulo.innerText = "suelo"
+        h2.append(terminacionTitulo);
+    } else if (metrosCuadrados == false) {
+        const terminacionTitulo = document.createElement("strong")
+        terminacionTitulo.innerText = "macetas"
+        h2.append(terminacionTitulo);
+    }
+    // document.h2.append(terminacionTitulo);
+    
 }
 
 
@@ -205,7 +221,11 @@ const muestraDeAguaFinal = () => {
         eleccionDeMacetas.forEach((maceta) => {
             capacidadFinal = maceta.capacidad * 0.15;
             capacidadFinal = capacidadFinal.toFixed(2)
-            alert("Para las macetas de " + maceta.capacidad + " litros de tierra, las vas a regar con " + capacidadFinal + " litros de agua.")
+            let ul = document.createElement("ul")
+            let contenedorRespuesta = document.createElement("li")
+            contenedorRespuesta.innerText = `Para las macetas de ${maceta.capacidad} litros de tierra, las vas a regar con ${capacidadFinal} litros de agua.`;
+            ul.append(contenedorRespuesta);
+            document.body.append(ul)
         });
     }
 }
@@ -215,15 +235,30 @@ const muestraDeAgua = () => {
     if (metrosCuadrados == false) {
         cantidadFinalDeAgua = tierraTotal * 0.15;
         cantidadFinalDeAgua = cantidadFinalDeAgua.toFixed(2);
-        alert("La cantidad de agua que vas a necesitar para regar todas las macetas va a ser de " + cantidadFinalDeAgua + " litros de agua.")
+        muestraDelResultado()
     }
 }
 
-// OPCION CALCULAR RIEGO EN SUELO
+const muestraDelResultado = () => {
+    let resultadoUsuario = document.createElement("div")
+    let parrafoRespuesta = document.createElement("p")
+    parrafoRespuesta.innerText=`La cantidad de agua que vas a necesitar para regar todas las macetas va a ser de ${cantidadFinalDeAgua} litros de agua.`
+    
+    resultadoUsuario.append(parrafoRespuesta)
+    document.body.append(resultadoUsuario)
+}
 
-//Función de ingreso de los metros cuadrados.
 
 
+// const muestraPorMaceta = () => {
+//     let ul = document.createElement("ul")
+//     let contenedorRespuesta = document.createElement("li")
+//     contenedorRespuesta.innerText = `Para las macetas de  litros de tierra, las vas a regar con ${capacidadFinal} litros de agua.`;
+//     ul.append(contenedorRespuesta);
+//     document.body.append(ul)
+// }
+
+// Ingreso de los tamaños de los metros cuadrados a calcular.
 
 const cuantasParcelas = () => {
     if (metrosCuadrados == true) {
@@ -235,11 +270,9 @@ const cuantasParcelas = () => {
             return cantidadDeParcelas;
         }
     }
-   
 }
 
 
-// Ingreso de los tamaños de los metros cuadrados a calcular.
 
 const calculoDeTierra = () => {
     if (metrosCuadrados == true) {
@@ -268,13 +301,20 @@ const muestraDeAguaSuelo = () => {
 }
 
 
+// DOM
+
+// USAR INNERHTML, CREATE  ELEMENT Y APPEND CHILD
+
+
 // Funcionamiento del script
 
-bienvenida();
+// bienvenida();
 eleccion();
+mostrarTitulo();
 macetasCalcular();
 pusheadoMacetas();
 sumaDeAgua();
 muestraDeAguaFinal();
+
 cuantasParcelas();
 calculoDeTierra();
