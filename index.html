@@ -12,11 +12,45 @@
         <h1>Calculo tu riego</h1>
     </header>
 
-    <hr>
-
     <section class="contenedorMuestra">
         <div class="contenedorMuestra-titulo">
-            <h2 id=h2>Cálculo de riego en </h2>
+            <h2 id=h2>Cálculo de riego en maceta</h2>
+        </div>
+
+        <div class="contenedorPregunta">
+            <div class="contenedorPregunta-tamaño">
+                <strong class="litrosDeTierra">Ingresá el tamaño de tus macetas en Litros de tierra.</strong>
+                <input type="text" id="ingresoLitros" placeholder="ingresá litros de las macetas" class="input">
+            </div>
+
+            <div class="contenedorPregunta-capacidad">
+                <strong>Ingresá la cantidad de macetas que queres calcular.</strong>
+                <input type="text" id="ingresoCantidad" placeholder="ingresá cantidad de macetas" class="input">
+            </div>
+
+            <button id="calcular" class="btn-calcular">Calcular</button>
+           
+        </div>
+
+        <div id="contenedorRespuesta" class="contenedorRespuesta">
+        </div>
+    </section>
+
+    <section class="contenedorSuelo">
+        <div>
+            <h2>Cálculo de riego en suelo</h2>
+        </div>
+
+        <div class="contenedorSuelo-calculo">
+            <div>
+                <strong>Ingresá el tamaño en m² de tu terreno a calcular</strong>
+                <input type="text" id="inputSuelo" placeholder="Ingresá los m²" class="input-suelo">
+            </div>
+
+            <button id="btn-suelo" class="btn-calcularSuelo">Calcular</button>
+        </div>
+
+        <div id="contenedorRespuestaSuelo" class="contenedorRespuesta">
         </div>
     </section>
  
