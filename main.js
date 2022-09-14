@@ -33,7 +33,7 @@ const macetasCalcular = ()=> {
         litrosDeTierra = litrosDeTierra * 0.15
         litrosDeTierra = litrosDeTierra.toFixed(2) 
 
-        contenedorRespuesta.innerHTML += `<p class = "parrafo-respuesta">Usarás ${litrosDeTierra} litros de agua para regar cada maceta de ${ingresoLitros.value}, necesitando un total de ${ingresoLitros.value * ingresoCantidad.value} litros de agua.</p>`
+        contenedorRespuesta.innerHTML += `<p class = "parrafo-respuesta">Usarás ${litrosDeTierra} litros de agua para regar cada maceta de ${ingresoLitros.value} litros, necesitando un total de ${ingresoLitros.value * ingresoCantidad.value} litros de agua.</p>`
     } )
 }
 
