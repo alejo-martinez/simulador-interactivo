@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Calculo tu riego | Riego en maceta</title>
+</head>
+<body>
+    <section class="contenedorMuestra">
+        <div class="contenedorMuestra-titulo">
+            <h2 id=h2>Cálculo de riego en maceta</h2>
+        </div>
+
+        <div class="contenedorPregunta">
+            <div class="contenedorPregunta-tamaño">
+                <strong class="litrosDeTierra">Ingresá el tamaño de tus macetas en Litros de tierra.</strong>
+                <input type="text" id="ingresoLitros" placeholder="ingresá litros de las macetas" class="input">
+            </div>
+
+            <div class="contenedorPregunta-capacidad">
+                <strong>Ingresá la cantidad de macetas que queres calcular.</strong>
+                <input type="text" id="ingresoCantidad" placeholder="ingresá cantidad de macetas" class="input">
+            </div>
+
+            <button id="calcular" class="btn-calcular">Calcular</button>
+           
+        </div>
+
+        <div id="contenedorRespuesta" class="contenedorRespuesta">
+            <table class="tablaMacetas" id="filaRespuesta">
+                <tr class="filaInicial">
+                    <td>Capacidad de las macetas</td>
+                    <td>Regarás cada una con...</td>
+                    <td>Total de agua</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div class="btn-contenedor">
+        <button><a href="../index.html">Volver al inicio</a></button>
+    </div>
+
+    <script src="../JS/macetas.js"></script>
+</body>
+</html>

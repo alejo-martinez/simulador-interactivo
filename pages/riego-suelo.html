@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Calculo tu riego | Riego en suelo</title>
+</head>
+<body>
+    <section class="contenedorSuelo">
+        <div>
+            <h2>Cálculo de riego en suelo</h2>
+        </div>
+
+        <div class="contenedorSuelo-calculo">
+            <div>
+                <strong>Ingresá el tamaño en m² de tu terreno a calcular</strong>
+                <input type="text" id="inputSuelo" placeholder="Ingresá los m²" class="input-suelo">
+            </div>
+
+            <button id="btn-suelo" class="btn-calcularSuelo">Calcular</button>
+        </div>
+
+        <div id="contenedorRespuestaSuelo" class="contenedorRespuesta">
+            <table class="tablaMacetas" id="filaRespuesta-suelo">
+                <tr class="filaInicial">
+                    <td>Área del terreno</td>
+                    <td>Necesitarás...</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div class="btn-contenedor">
+        <button><a href="../index.html">Volver al inicio</a></button>
+    </div>
+
+    <script src="../JS/suelo.js"></script>
+</body>
+</html>

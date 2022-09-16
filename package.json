@@ -1,0 +1,22 @@
+{
+  "name": "simulador_interactivo",
+  "version": "1.0.0",
+  "description": "Estilos para el simulador",
+  "main": "main.js",
+  "scripts": {
+    "build": "node-sass --include-path sass style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejo-martinez/simulador-interactivo.git"
+  },
+  "author": "Alejo Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejo-martinez/simulador-interactivo/issues"
+  },
+  "homepage": "https://github.com/alejo-martinez/simulador-interactivo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Calculo tu riego</title>
 </head>
@@ -12,47 +15,15 @@
         <h1>Calculo tu riego</h1>
     </header>
 
-    <section class="contenedorMuestra">
-        <div class="contenedorMuestra-titulo">
-            <h2 id=h2>Cálculo de riego en maceta</h2>
-        </div>
+    <div>
 
-        <div class="contenedorPregunta">
-            <div class="contenedorPregunta-tamaño">
-                <strong class="litrosDeTierra">Ingresá el tamaño de tus macetas en Litros de tierra.</strong>
-                <input type="text" id="ingresoLitros" placeholder="ingresá litros de las macetas" class="input">
-            </div>
+    </div>
 
-            <div class="contenedorPregunta-capacidad">
-                <strong>Ingresá la cantidad de macetas que queres calcular.</strong>
-                <input type="text" id="ingresoCantidad" placeholder="ingresá cantidad de macetas" class="input">
-            </div>
+    <div>
+        <button><a href="./pages/riego-maceta.html">calcular riego en maceta</a></button>
+        <button><a href="./pages/riego-suelo.html">calcular riego en suelo</a></button>
+    </div>
 
-            <button id="calcular" class="btn-calcular">Calcular</button>
-           
-        </div>
-
-        <div id="contenedorRespuesta" class="contenedorRespuesta">
-        </div>
-    </section>
-
-    <section class="contenedorSuelo">
-        <div>
-            <h2>Cálculo de riego en suelo</h2>
-        </div>
-
-        <div class="contenedorSuelo-calculo">
-            <div>
-                <strong>Ingresá el tamaño en m² de tu terreno a calcular</strong>
-                <input type="text" id="inputSuelo" placeholder="Ingresá los m²" class="input-suelo">
-            </div>
-
-            <button id="btn-suelo" class="btn-calcularSuelo">Calcular</button>
-        </div>
-
-        <div id="contenedorRespuestaSuelo" class="contenedorRespuesta">
-        </div>
-    </section>
  
     <script src="./main.js"></script>
 </body>

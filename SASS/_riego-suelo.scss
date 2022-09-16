@@ -1,0 +1,19 @@
+.contenedorSuelo {
+    // grid-area: suelo;
+}
+
+
+.btn-calcularSuelo {
+    margin-top: 20px;
+}
+
+.contenedorSuelo-calculo {
+    text-align: center;
+}
+
+.filaRespuesta-suelo {
+    & td {
+        color: #F1F120;
+        text-align: center;
+    }
+}

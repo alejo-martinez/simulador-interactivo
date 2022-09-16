@@ -1,0 +1,53 @@
+
+.contenedorMuestra {
+    // grid-area: maceta;
+}
+
+.contenedorRespuesta {
+    margin-top: 2.5rem;
+    
+    & table {
+        border: black 3px solid;
+        margin: auto;
+        & td {
+            padding: 7px;
+        }
+    }
+}
+
+.filaInicial {
+    & td {
+        color: white;
+        font-weight: bold;
+        font-family: "Merriweather", serif;
+    }
+}
+
+.filaRespuesta {
+    & td {
+        color: #F1F120;
+        text-align: center;
+    }
+}
+
+.contenedorPregunta {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.contenedorPregunta-tamaño {
+    margin: 20px 0;
+}
+
+.contenedorPregunta-capacidad {
+    margin: 20px 0;
+}
+
+
+
+.btn-calcular {
+    width: min-content;
+    margin: auto;
+}
+
