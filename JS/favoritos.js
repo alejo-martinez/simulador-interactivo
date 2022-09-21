@@ -28,6 +28,7 @@ btnFavoritos.addEventListener("click", ()=> {
 
 btnEliminar.addEventListener("click", ()=> {
     localStorage.clear()
+    location.reload();
 })
 
 
