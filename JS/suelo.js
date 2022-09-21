@@ -2,8 +2,8 @@ let metrosCuadrados = 0;
 const btnSuelo = document.getElementById("btn-suelo") 
 const contenedorRespuestaSuelo = document.getElementById("contenedorRespuestaSuelo")
 respuestaSuelo = document.getElementById("filaRespuesta-suelo")
-
-
+const favoritos = document.getElementById("favoritos")
+const suelosFavoritos = [];
 
     btnSuelo.addEventListener("click", ()=> {
         calcularAguaM();
@@ -18,6 +18,12 @@ respuestaSuelo = document.getElementById("filaRespuesta-suelo")
     <td>${inputSuelo.value} m²</td>
     <td>${metrosCuadrados} litros de agua`
 }
-/* <p class = "parrafo-respuesta">
-    Para el área de ${inputSuelo.value} m² vas a necesitar un total de ${metrosCuadrados} litros de agua.</p>
- */
+
+const almacenarFavoritos = ()=> {
+    suelosFavoritos.push(inputSuelo.value)
+    localStorage.setItem("suelos", JSON.stringify(suelosFavoritos))
+}
+
+favoritos.addEventListener("click", ()=> {
+    almacenarFavoritos()
+})

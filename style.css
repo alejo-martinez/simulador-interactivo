@@ -1,11 +1,17 @@
-@charset "UTF-8";
-.contenedorRespuesta {
-  margin-top: 2.5rem; }
-  .contenedorRespuesta table {
-    border: black 3px solid;
-    margin: auto; }
-    .contenedorRespuesta table td {
-      padding: 7px; }
+.contenedorMuestra {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-areas: "titulo titulo" "input tabla";
+  gap: 0 20px; }
+  .contenedorMuestra-titulo {
+    grid-area: titulo;
+    margin-bottom: 5rem; }
+
+.contenedorRespuesta table {
+  border: black 3px solid;
+  margin: auto; }
+  .contenedorRespuesta table td {
+    padding: 7px; }
 
 .filaInicial td {
   color: white;
@@ -17,19 +23,20 @@
   text-align: center; }
 
 .contenedorPregunta {
-  display: flex;
-  flex-flow: column nowrap;
+  align-items: center;
   text-align: center; }
-
-.contenedorPregunta-tamaño {
-  margin: 20px 0; }
-
-.contenedorPregunta-capacidad {
-  margin: 20px 0; }
+  .contenedorPregunta-capacidad {
+    margin: 20px 0; }
 
 .btn-calcular {
   width: min-content;
   margin: auto; }
+
+.btn-favoritos {
+  margin-left: 8px; }
+
+.contenedorSuelo {
+  margin-top: 3rem; }
 
 .btn-calcularSuelo {
   margin-top: 20px; }
@@ -40,6 +47,26 @@
 .filaRespuesta-suelo td {
   color: #F1F120;
   text-align: center; }
+
+.contenedor-favoritos {
+  text-align: center;
+  margin-top: 6rem; }
+
+.muestra-favoritos {
+  text-align: center;
+  margin: auto;
+  margin-top: 8rem; }
+  .muestra-favoritos td {
+    padding: 9px;
+    background-color: rebeccapurple;
+    color: #F1F120; }
+  .muestra-favoritos_suelo {
+    margin: auto;
+    margin-top: 5rem; }
+    .muestra-favoritos_suelo td {
+      padding: 9px;
+      background-color: rebeccapurple;
+      color: #F1F120; }
 
 * {
   box-sizing: border-box;
@@ -52,11 +79,7 @@ body {
   background: -webkit-linear-gradient(to right, #4286f4, #373B44);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4286f4, #373B44);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* display: grid;
-    grid-template-areas: 
-    "header header"
-    "maceta suelo"; */ }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 h1 {
   color: #D0C211;
@@ -90,7 +113,7 @@ button:active {
 
 a {
   text-decoration: none;
-  color: #47F9E2; }
+  color: whitesmoke; }
 
 .btn-contenedor {
   text-align: center;
@@ -98,3 +121,24 @@ a {
 
 td {
   border: white 1px solid; }
+
+.btn-inicio {
+  text-align: center; }
+
+.nav {
+  background-color: rgba(88, 24, 69, 0.56);
+  padding: 10px 0; }
+  .nav-barra {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style: none; }
+    .nav-barra a {
+      color: #FFC300;
+      font-weight: bold;
+      transition: all 0.3s; }
+      .nav-barra a:hover {
+        color: whitesmoke;
+        background-color: rgba(10, 68, 211, 0.67);
+        padding: 11px;
+        border-radius: 7px; }

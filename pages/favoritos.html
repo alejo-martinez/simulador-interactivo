@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Calendario</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-barra">
+            <li class="nav-barra_item"><a href="./riego-maceta.html">Macetas</a></li>
+            <li class="nav-barra_item"><a href="./riego-suelo.html">Suelo</a></li>
+            <li class="nav-barra_item"><a href="./favoritos.html">Favoritos</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Acá podés ver las macetas y los m² que hayas guardado como favoritos</h1>
+    </div>
+
+    <div class="contenedor-favoritos" id="contenedorFavoritos">
+        <button id="btnFavoritos">Ver mis macetas favoritas</button>
+        <button id="btnFavoritosSuelos">Ver mis m² favoritos</button>
+        <button class="btn-eliminar" id="btnEliminar">Vaciar favoritos</button>
+    </div>
+
+    <div class="contenedor-muestra-favoritos">
+        <table id="muestraFavoritos" class="muestra-favoritos"></table>
+        <table id="muestraSuelosFavoritos" class="muestra-favoritos_suelo"></table>
+    </div>
+
+    <div class="btn-contenedor">
+        <button><a href="../index.html">Volver al inicio</a></button>
+    </div>
+
+    <script src="../JS/favoritos.js"></script>
+</body>
+</html>

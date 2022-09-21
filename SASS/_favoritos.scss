@@ -1,0 +1,26 @@
+.contenedor-favoritos {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.muestra-favoritos {
+    text-align: center;
+    margin: auto;
+    margin-top: 8rem;
+    & td {
+        padding: 9px;
+        background-color: rebeccapurple;
+        color: #F1F120;
+    }
+
+    &_suelo {
+        margin: auto;
+        margin-top: 5rem;
+        & td {
+            padding: 9px;
+            background-color: rebeccapurple;
+            color: #F1F120;
+        }
+    }
+}
+

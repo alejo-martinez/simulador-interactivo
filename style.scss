@@ -1,5 +1,6 @@
 @import "SASS/riego-maceta";
 @import "SASS/riego-suelo";
+@import "SASS/favoritos";
 
 * {
     box-sizing: border-box;
@@ -11,10 +12,7 @@ body {
     background: #373B44;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* display: grid;
-    grid-template-areas: 
-    "header header"
-    "maceta suelo"; */
+
 }
 
 h1 {
@@ -55,7 +53,7 @@ button:active {
 
 a {
     text-decoration: none;
-    color: #47F9E2;
+    color: whitesmoke;
 }
 
 .btn-contenedor {
@@ -66,4 +64,37 @@ a {
 
 td {
     border: white 1px solid;
+}
+
+.btn-inicio {
+    text-align: center;
+}
+
+.nav {
+    background-color: rgba(88, 24, 69, 0.56);
+    padding: 10px 0;
+
+    &-barra {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        list-style: none;
+
+        &_item {
+            
+        }
+
+        & a {
+            color: #FFC300;
+            font-weight: bold;
+            transition: all 0.3s;
+
+            &:hover {
+                color: whitesmoke;
+                background-color: rgba(10, 68, 211, 0.67);
+                padding: 11px;
+                border-radius: 7px;
+            }
+        }
+    }
 }

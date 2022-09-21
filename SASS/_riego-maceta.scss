@@ -1,10 +1,20 @@
 
 .contenedorMuestra {
-    // grid-area: maceta;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "input tabla";
+    gap: 0 20px;
+
+    &-titulo {
+        grid-area: titulo;
+        margin-bottom: 5rem;
+    }
 }
 
 .contenedorRespuesta {
-    margin-top: 2.5rem;
+    // margin-top: 2.5rem;
     
     & table {
         border: black 3px solid;
@@ -31,23 +41,21 @@
 }
 
 .contenedorPregunta {
-    display: flex;
-    flex-flow: column nowrap;
+    align-items: center;
+    // display: flex;
+    // flex-flow: column nowrap;
     text-align: center;
+
+    &-capacidad {
+        margin: 20px 0;
+    }
 }
-
-.contenedorPregunta-tamaño {
-    margin: 20px 0;
-}
-
-.contenedorPregunta-capacidad {
-    margin: 20px 0;
-}
-
-
 
 .btn-calcular {
     width: min-content;
     margin: auto;
 }
 
+.btn-favoritos {
+    margin-left: 8px;
+}

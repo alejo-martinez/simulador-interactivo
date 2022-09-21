@@ -11,6 +11,14 @@
     <title>Calculo tu riego | Riego en maceta</title>
 </head>
 <body>
+    <nav class="nav">
+        <ul class="nav-barra">
+            <li class="nav-barra_item"><a href="./riego-maceta.html">Macetas</a></li>
+            <li class="nav-barra_item"><a href="./riego-suelo.html">Suelo</a></li>
+            <li class="nav-barra_item"><a href="./favoritos.html">Favoritos</a></li>
+        </ul>
+    </nav>
+
     <section class="contenedorMuestra">
         <div class="contenedorMuestra-titulo">
             <h2 id=h2>Cálculo de riego en maceta</h2>
@@ -18,16 +26,17 @@
 
         <div class="contenedorPregunta">
             <div class="contenedorPregunta-tamaño">
-                <strong class="litrosDeTierra">Ingresá el tamaño de tus macetas en Litros de tierra.</strong>
+                <strong class="litrosDeTierra">Ingresá el tamaño de tus macetas en Litros de tierra:</strong>
                 <input type="text" id="ingresoLitros" placeholder="ingresá litros de las macetas" class="input">
             </div>
 
             <div class="contenedorPregunta-capacidad">
-                <strong>Ingresá la cantidad de macetas que queres calcular.</strong>
+                <strong>Ingresá la cantidad de macetas que queres calcular:</strong>
                 <input type="text" id="ingresoCantidad" placeholder="ingresá cantidad de macetas" class="input">
             </div>
 
             <button id="calcular" class="btn-calcular">Calcular</button>
+            <button id="favoritos" class="btn-favoritos">Agregar a favoritos</button>
            
         </div>
 
@@ -41,6 +50,10 @@
             </table>
         </div>
     </section>
+    
+    <div id="contenedorFavoritas">
+        
+    </div>
 
     <div class="btn-contenedor">
         <button><a href="../index.html">Volver al inicio</a></button>
