@@ -7,11 +7,13 @@
     grid-area: titulo;
     margin-bottom: 5rem; }
 
-.contenedorRespuesta table {
-  border: black 3px solid;
-  margin: auto; }
-  .contenedorRespuesta table td {
-    padding: 7px; }
+.contenedorRespuesta {
+  margin-top: 0; }
+  .contenedorRespuesta table {
+    border: black 3px solid;
+    margin: auto; }
+    .contenedorRespuesta table td {
+      padding: 7px; }
 
 .filaInicial td {
   color: white;
@@ -47,6 +49,14 @@
 .filaRespuesta-suelo td {
   color: #F1F120;
   text-align: center; }
+
+.contenedorRespuestaSuelo {
+  margin-top: 4rem; }
+  .contenedorRespuestaSuelo table {
+    border: black 3px solid;
+    margin: auto; }
+    .contenedorRespuestaSuelo table td {
+      padding: 7px; }
 
 .contenedor-favoritos {
   text-align: center;
@@ -126,7 +136,7 @@ td {
   text-align: center; }
 
 .nav {
-  background-color: rgba(88, 24, 69, 0.56);
+  background-color: #041D5A;
   padding: 10px 0; }
   .nav-barra {
     display: flex;
@@ -139,6 +149,11 @@ td {
       transition: all 0.3s; }
       .nav-barra a:hover {
         color: whitesmoke;
-        background-color: rgba(10, 68, 211, 0.67);
+        background-color: #1D3265;
         padding: 11px;
         border-radius: 7px; }
+
+.actual {
+  background-color: #3F5690;
+  padding: 11px;
+  border-radius: 7px; }

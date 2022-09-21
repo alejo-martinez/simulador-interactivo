@@ -14,8 +14,7 @@
 }
 
 .contenedorRespuesta {
-    // margin-top: 2.5rem;
-    
+    margin-top: 0;
     & table {
         border: black 3px solid;
         margin: auto;
@@ -42,8 +41,6 @@
 
 .contenedorPregunta {
     align-items: center;
-    // display: flex;
-    // flex-flow: column nowrap;
     text-align: center;
 
     &-capacidad {

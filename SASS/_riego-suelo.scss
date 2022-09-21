@@ -3,7 +3,6 @@
     margin-top: 3rem;
 }
 
-
 .btn-calcularSuelo {
     margin-top: 20px;
 }
@@ -16,5 +15,16 @@
     & td {
         color: #F1F120;
         text-align: center;
+    }
+}
+
+.contenedorRespuestaSuelo {
+    margin-top: 4rem;
+    & table {
+        border: black 3px solid;
+        margin: auto;
+        & td {
+            padding: 7px;
+        }
     }
 }

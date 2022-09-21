@@ -71,7 +71,7 @@ td {
 }
 
 .nav {
-    background-color: rgba(88, 24, 69, 0.56);
+    background-color: #041D5A;
     padding: 10px 0;
 
     &-barra {
@@ -80,10 +80,6 @@ td {
         justify-content: space-evenly;
         list-style: none;
 
-        &_item {
-            
-        }
-
         & a {
             color: #FFC300;
             font-weight: bold;
@@ -91,10 +87,16 @@ td {
 
             &:hover {
                 color: whitesmoke;
-                background-color: rgba(10, 68, 211, 0.67);
+                background-color: #1D3265;
                 padding: 11px;
                 border-radius: 7px;
             }
         }
     }
+}
+
+.actual {
+    background-color: #3F5690 ;
+    padding: 11px;
+    border-radius: 7px;
 }
