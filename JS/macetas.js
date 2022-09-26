@@ -4,7 +4,7 @@ const contenedorRespuesta = document.getElementById("contenedorRespuesta");
 let calcular = document.getElementById("calcular");
 let filaRespuesta = document.getElementById("filaRespuesta");
 let favoritos = document.getElementById("favoritos");
-// let contador = 0
+
 const macetasFavoritas = [];
 
 class Maceta {
@@ -23,14 +23,20 @@ class Maceta {
 const macetasCalcular = ()=> {
     litrosDeTierra = parseFloat(document.getElementById("ingresoLitros").value);
     cantidad = parseFloat(document.getElementById("ingresoCantidad").value);
-    litrosDeTierra = litrosDeTierra * 0.15
-    litrosDeTierra = litrosDeTierra.toFixed(2) 
+    let resultadoFinal = litrosDeTierra * 0.15
+    resultadoFinal = resultadoFinal.toFixed(2) 
 
+    litrosDeTierra === 1 ? //Condicion 1
+     filaRespuesta.innerHTML += `<tr class = "filaRespuesta">
+    <td>${ingresoLitros.value} litro de tierra</td>
+    <td>${resultadoFinal} litros de agua</td>
+    <td>${ingresoCantidad.value * resultadoFinal} litros de agua</td> 
+    </tr>` : // Condicion 2
     filaRespuesta.innerHTML += `<tr class = "filaRespuesta">
     <td>${ingresoLitros.value} litros de tierra</td>
-    <td>${litrosDeTierra} litros de agua</td>
-    <td>${ingresoLitros.value * ingresoCantidad.value} litros de agua</td>
-    </tr>`
+    <td>${resultadoFinal} litros de agua</td>
+    <td>${resultadoFinal * ingresoCantidad.value} litros de agua</td>
+    </tr>` 
 }
 
 
