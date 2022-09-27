@@ -15,10 +15,30 @@ class Maceta {
 }
 
 
-    calcular.addEventListener("click", (e)=> {
-        macetasCalcular();
-    } )
 
+
+const calculando = () => {
+  
+  let timerInterval
+  Swal.fire({
+title: 'Calculando',
+html: 'Espere un momento porfavor',
+color: '#716add',
+background: "#C7D3F2",
+target: "#contenedorFavoritas",
+timer: 800,
+timerProgressBar: true,
+didOpen: () => {
+  Swal.showLoading()
+  timerInterval = setInterval(() => {
+    b.textContent = Swal.getTimerLeft()
+  }, 100)
+},
+willClose: () => {
+  clearInterval(timerInterval)
+}
+})
+}
 
 const macetasCalcular = ()=> {
     litrosDeTierra = parseFloat(document.getElementById("ingresoLitros").value);
@@ -39,11 +59,23 @@ const macetasCalcular = ()=> {
     </tr>` 
 }
 
+calcular.addEventListener("click", (e)=> {
+  calculando();
+  macetasCalcular();
+} )
 
 const almacenarFavoritos = ()=> {
     const maceta = new Maceta(ingresoLitros.value, ingresoCantidad.value);
     macetasFavoritas.push(maceta)
     localStorage.setItem("macetas" ,JSON.stringify(macetasFavoritas))
+    Swal.fire({
+        title: '¡Agregado a favoritos! Visita la sección "favoritos" para verlas',
+        width: 300,
+        padding: '1em',
+        color: '#716add',
+        icon: "success",
+        background: "#C7D3F2"
+      })
 }
 
 favoritos.addEventListener("click", ()=> {

@@ -6,6 +6,24 @@ const favoritos = document.getElementById("favoritos")
 const suelosFavoritos = [];
 
     btnSuelo.addEventListener("click", ()=> {
+        let timerInterval
+        Swal.fire({
+      title: 'Calculando',
+      html: 'Espere un momento porfavor',
+      color: '#716add',
+      background: "#C7D3F2",
+      timer: 800,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading()
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft()
+        }, 100)
+      },
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    })
         calcularAguaM();
     })
 
@@ -26,4 +44,12 @@ const almacenarFavoritos = ()=> {
 
 favoritos.addEventListener("click", ()=> {
     almacenarFavoritos()
+    Swal.fire({
+        title: '¡Agregado a favoritos! Visita la sección "favoritos" para verlos',
+        width: 300,
+        padding: '1em',
+        color: '#716add',
+        icon: "success",
+        background: "#C7D3F2"
+      })
 })

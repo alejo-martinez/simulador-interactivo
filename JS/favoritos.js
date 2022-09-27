@@ -27,8 +27,22 @@ btnFavoritos.addEventListener("click", ()=> {
 })
 
 btnEliminar.addEventListener("click", ()=> {
-    localStorage.clear()
-    location.reload();
+    Swal.fire({
+        title: '¿Estás seguro que querés vaciar tus favoritos?',
+        text: "Luego tendrás que agregar todos de nuevo",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Acept'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            '¡Vaciado con éxito!',
+          )
+          localStorage.clear()
+        }
+      })
 })
 
 
