@@ -1,25 +1,27 @@
+@import "variables";
+
 .contenedor-favoritos {
-    text-align: center;
+    text-align: $alinearTextos;
     margin-top: 6rem;
 }
 
 .muestra-favoritos {
-    text-align: center;
-    margin: auto;
+    text-align: $alinearTextos;
+    margin: $marginAuto;
     margin-top: 8rem;
     & td {
-        padding: 9px;
-        background-color: rebeccapurple;
-        color: #F1F120;
+        padding: $paddingColumnas;
+        background-color: $fondoTablasFavoritos;
+        color: $colorTextos;
     }
 
     &_suelo {
-        margin: auto;
+        margin: $marginAuto;
         margin-top: 5rem;
         & td {
-            padding: 9px;
-            background-color: rebeccapurple;
-            color: #F1F120;
+            padding: $paddingColumnas;
+            background-color: $fondoTablasFavoritos;
+            color: $colorTextos;
         }
     }
 }

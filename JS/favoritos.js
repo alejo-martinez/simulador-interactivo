@@ -31,10 +31,13 @@ btnEliminar.addEventListener("click", ()=> {
         title: '¿Estás seguro que querés vaciar tus favoritos?',
         text: "Luego tendrás que agregar todos de nuevo",
         icon: 'warning',
+        iconColor: "red",
+        background: "#C7D3F2",
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Acept'
+        confirmButtonText: 'Aceptar',
+        cancelButtonText: "Cancelar",
       }).then((result) => {
         if (result.isConfirmed) {
           Swal.fire(

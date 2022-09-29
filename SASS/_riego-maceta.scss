@@ -1,3 +1,4 @@
+@import "variables";
 
 .contenedorMuestra {
     margin-top: 3rem;
@@ -17,9 +18,9 @@
     margin-top: 0;
     & table {
         border: black 3px solid;
-        margin: auto;
+        margin: $marginAuto;
         & td {
-            padding: 7px;
+            padding: $paddingColumnas;
         }
     }
 }
@@ -34,14 +35,14 @@
 
 .filaRespuesta {
     & td {
-        color: #F1F120;
-        text-align: center;
+        color: $colorTextos;
+        text-align: $alinearTextos;
     }
 }
 
 .contenedorPregunta {
     align-items: center;
-    text-align: center;
+    text-align: $alinearTextos;
 
     &-capacidad {
         margin: 20px 0;
@@ -50,7 +51,7 @@
 
 .btn-calcular {
     width: min-content;
-    margin: auto;
+    margin: $marginAuto;
 }
 
 .btn-favoritos {

@@ -1,3 +1,4 @@
+@import "variables";
 
 .contenedorSuelo {
     margin-top: 3rem;
@@ -8,13 +9,13 @@
 }
 
 .contenedorSuelo-calculo {
-    text-align: center;
+    text-align: $alinearTextos;
 }
 
 .filaRespuesta-suelo {
     & td {
-        color: #F1F120;
-        text-align: center;
+        color: $colorTextos;
+        text-align: $alinearTextos;
     }
 }
 
@@ -22,9 +23,9 @@
     margin-top: 4rem;
     & table {
         border: black 3px solid;
-        margin: auto;
+        margin: $marginAuto;
         & td {
-            padding: 7px;
+            padding: $paddingColumnas;
         }
     }
 }

@@ -67,15 +67,15 @@
   margin: auto;
   margin-top: 8rem; }
   .muestra-favoritos td {
-    padding: 9px;
-    background-color: rebeccapurple;
+    padding: 7px;
+    background-color: #4911BF;
     color: #F1F120; }
   .muestra-favoritos_suelo {
     margin: auto;
     margin-top: 5rem; }
     .muestra-favoritos_suelo td {
-      padding: 9px;
-      background-color: rebeccapurple;
+      padding: 7px;
+      background-color: #4911BF;
       color: #F1F120; }
 
 * {
