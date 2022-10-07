@@ -157,3 +157,18 @@ td {
   background-color: #3F5690;
   padding: 11px;
   border-radius: 7px; }
+
+.seleccionarCultivo {
+  text-align: center; }
+
+.respuesta-cultivo {
+  text-align: center;
+  margin-top: 20px; }
+
+.textoCultivo {
+  padding: 4px 16px;
+  background-color: rgba(255, 255, 250, 0.25);
+  margin: 0 10px;
+  border-radius: 9px;
+  font-size: 120%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }

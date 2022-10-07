@@ -1,0 +1,51 @@
+[
+    {
+       "nombre":"Albahaca",
+       "variedad":"Aromáticas",
+       "siembra":"a partir de mayo",
+       "suelo":"Nutritivo, ricos en humus y sueltos",
+       "descripcion":"Podremos recolectar las primeras hojas de albahaca pasadas seis u ocho semanas. Es recomendable recoger tallos enteros de una longitud de 5-7 cm en vez de las hojas individuales. La poda continuada de los brotes terminales evita la floración y la aparición de sabores amargos. La albahaca se puede cultivar en macizos junto a tomates, uvas, pimientos, alubias, colinabo, maíz y cebollas, pues además evita la aparición de plagas y hongos. Por el contrario, no deberíamos plantar albahaca cerca de otras hierbas aromáticas. Es importante situarla en un lugar soleado y protegido del viento y regarla todos los días con un poco de agua sin llegar a encharcarla."
+    },
+    {
+       "nombre":"Acelga",
+       "variedad":"Hortaliza",
+       "siembra":"en climas templados",
+       "suelo":"Arcilloso",
+       "descripcion":"Necesitan tierras húmedas para crecer pero sin llegar a encharcar el suelo. Es decir, nunca hay que dejar que la tierra se seque completamente pero tampoco saturarla en agua. Otra cosa importante, es que se asocia bien con los ajos, así que , como ya los deberíamos tener sembrados en la huerta , podemos ponerlas al lado suyo. El primer riego una vez trasplantadas, tiene que ser abundante para que se asiente bien la tierra pero los siguientes riegos deben ser ligeros. La fecha de cosecha va a ser más o menos un mes después del trasplante pero, como casi todo cultivo, hay que ir siguiéndolo de cerca. Como la acelga es un cultivo del cual aprovechamos las hojas no es necesario arrancar la planta completa sino, ir cortando hojas según nuestras necesidades"
+    },
+    {
+       "nombre":"Ajo",
+       "variedad":"Hortícola",
+       "siembra":"en otoño",
+       "suelo":"Abonado y suelto",
+       "descripcion":"Para plantar los dientes basta con enterrarlos unos 2-3 cm y taparlos con tierra sin apisonar. Una vez enterrados se les da un primer riego suave y a partir de ese momento, suelen tardar unas 2 semanas sólo en germinar. El ajo tiende a pudrirse fácilmente, por lo que, el riego debe ser de moderado a escaso en caso de lluvias. Pero si sos de una zona seca, con un riego moderado cada una semana será más que suficiente. Si dejamos que la flor crezca, el ajo va a movilizar todos los nutrientes hacia la misma y “descuidará” el tamaño del bulbo por lo que, vamos a cortarla."
+    },
+    {
+       "nombre":"Berenjena",
+       "variedad":"Hortaliza",
+       "siembra":"a fines de invierno",
+       "suelo":"con gran cantidad de abono y húmedo",
+       "descripcion":"Las semillas para la siembra se extraen de los frutos maduros. Se deben sembrar en macetero y dejarlas alrededor de 10 semanas.  Luego deben trasplantarse a 25-30 cm de profundidad. Las berenjenas se deben cortar (no tirar) en el momento en que florece la planta y antes de que estén totalmente crecidas. Es una planta que necesita bastante sol (entre 10 a 12 horas diarias) y no exponerse nunca a las heladas (temperatura mínima 10 a 12°). Soporta temperaturas elevadas si su suelo se mantiene húmedo. Las berenjenas necesitan bastante riego sobretodo en la época en que crecen los frutos. Cuando la planta consigue unos 60cm de altura es recomendable utilizar guías para que se separen del suelo y no tengan problemas de humedad, esto ayuda también a que se ventile mejor la planta. También es importante eliminar las hojas interiores e inferiores para que la planta consiga mejor iluminación y ventilación."
+    },
+    {
+      "nombre": "Calabaza",
+      "variedad": "Herbacea",
+      "siembra": "a finales de primavera",
+      "suelo": "con mucha materia orgánica",
+      "descripcion": "Los calabacines y otras calabazas no necesitan mucho trabajo de preparación. Por lo general, no toleran la tierra o el aire fríos ni las heladas y sus raíces no viven bien al trasplantarlas. Después de que la tierra se haya calentado podrá sembrar sus semillas directamente en la tierra del jardín que recibe toda la luz solar. Las variedades de calabazas son de arbustos o de enredadera. Si su jardín es pequeño, las variedades de arbusto son una opción excelente. Pero si definitivamente quiere una calabaza de enredadera, cultive sus calabazas verticalmente en un enrejado. La cosecha la podrá realizar pasados 2 a 3 meses aproximadamente desde la siembra."
+  },
+    {
+       "nombre":"Cebolla",
+       "variedad":"Hortaliza",
+       "siembra":"de forma bianual",
+       "suelo":"abonado y suelto",
+       "descripcion":"Sembrar en un semillero de por lo menos unos 15 cm, con un buen drenaje de agua para que las raíces oxigenen y no se pudran. Al dispersarlas es importante no abarrotar el semillero de semillas, sino nos van a salir muchas cebollas y ninguna se va a desarrollar correctamente por la competencia con las otras. El primer riego debe ser abundante y luego ir manteniéndolas hidratas con regularidad. Una vez terminada la siembra, las cebollas tardarán una o dos semanas en germinar. Una vez obtenidos los primeros plantines de cebollas, los trasplantamos al suelo de la huerta. Procuramos mantener las cebollas hidratadas una vez en el suelo pero siempre sin excedernos de agua. Si hicimos todo bien, en unos 2-4 meses tendremos las primeras cebollas listas para cosechar. La cebolla tiene una asociación benéfica con: berenjena, lechuga, melón, tomate, repollo, puerro y, una asociación dañina con: arveja, coliflor, habas, porotos."
+    },
+    {
+      "nombre": "Tomate",
+      "variedad": "Hortaliza",
+      "siembra": "a inicios de primavera",
+      "suelo": "profundo con buen drenaje",
+      "descripcion": "La tomatera es un tipo de planta que se adapta bien a una gran variedad de climas. La excepción radica en climas propensos a sufrir heladas, fenómeno al que el tomate es sensible. Con respecto a la humedad en el cultivo de tomates, la planta de tomate requiere humedades medias, que no superen el 70 %. Al tener un sistema radicular poco profundo su adaptación a suelos pobres es buena. Insistimos en las características del drenaje pues un riego excesivo en el que la tierra no puede absorber el agua con suficiente rapidez, produce un encharcamiento que pudre las raíces y favorece el desarrollo de enfermedades."
+  }
+ ]

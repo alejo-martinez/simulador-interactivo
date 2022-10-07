@@ -42,18 +42,19 @@ willClose: () => {
 }
 
 const macetasCalcular = ()=> {
+  litrosDeTierra = parseFloat(document.getElementById("ingresoLitros").value)
     cantidad = parseFloat(document.getElementById("ingresoCantidad").value);
-    let resultadoFinal = retornar * 0.15
+    let resultadoFinal = litrosDeTierra * 0.15
     resultadoFinal = resultadoFinal.toFixed(2) 
 
-    retornar === 1 ? //Condicion 1
+    litrosDeTierra === 1 ? //Condicion 1
      filaRespuesta.innerHTML += `<tr class = "filaRespuesta">
-    <td>${retornar} litro de tierra</td>
+    <td>${ingresoLitros.value} litro de tierra</td>
     <td>${resultadoFinal} litros de agua</td>
     <td>${ingresoCantidad.value * resultadoFinal} litros de agua</td> 
     </tr>` : // Condicion 2
     filaRespuesta.innerHTML += `<tr class = "filaRespuesta">
-    <td>${retornar} litros de tierra</td>
+    <td>${ingresoLitros.value} litros de tierra</td>
     <td>${resultadoFinal} litros de agua</td>
     <td>${resultadoFinal * ingresoCantidad.value} litros de agua</td>
     </tr>` 
