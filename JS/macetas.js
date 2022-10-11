@@ -66,28 +66,12 @@ calcular.addEventListener("click", (e)=> {
 } )
 
 const almacenarFavoritos = ()=> {
-    const maceta = new Maceta(retornar, ingresoCantidad.value);
-    macetasFavoritas.push(maceta)
-    localStorage.setItem("macetas" ,JSON.stringify(macetasFavoritas))
+  const maceta = new Maceta(ingresoLitros.value, ingresoCantidad.value);
+  macetasFavoritas.push(maceta)
+  localStorage.setItem("macetas" ,JSON.stringify(macetasFavoritas))
 
   btnSwal()
 }
-
-
-const pedirDatos = async () => {
- const resp = await fetch("../data/data.json")
- const data = await resp.json()
- data.forEach(maceta => {
-  select.innerHTML += `<option value="${maceta.capacidad}">${maceta.capacidad} litros.`
- }); 
- divMacetas.append(select)
-}
-pedirDatos();
-
-select.addEventListener("change", (el) => {
-  retornar = el.target.value;
-  return retornar;
-})
 
 const btnSwal = ()=> {
   Swal.fire({

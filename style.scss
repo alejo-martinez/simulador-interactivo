@@ -33,6 +33,11 @@ input {
     margin-top: 7px;
 }
 
+h3 {
+    margin: 7px 0;
+    color: $colorTextos;
+}
+
 button {
     padding: 4px;
     border-radius: 2px;
@@ -113,6 +118,7 @@ td {
 .textoCultivo {
     padding: 4px 16px;
     background-color: rgba(255, 255, 250, 0.25);
+    color: #073767;
     margin: 0 10px;
     border-radius: 9px;
     font-size: 120%;
