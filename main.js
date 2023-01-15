@@ -62,11 +62,3 @@ const cambiarCultivo = (val) => {
     }
 }
 
-
-// {
-//     nombre: "",
-//     variedad: "",
-//     siembra: "",
-//     suelo: "",
-//     descripcion: "",
-// },
